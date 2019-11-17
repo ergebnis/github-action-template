@@ -1,7 +1,8 @@
-/.editorconfig
 /.git/
-/.gitattributes
 /.github/
+/bin/
+/.editorconfig
+/.gitattributes
 /.gitignore
 /CHANGELOG.md
 /LICENSE
