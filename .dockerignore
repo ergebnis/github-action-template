@@ -1,0 +1,9 @@
+/.editorconfig
+/.git/
+/.gitattributes
+/.github/
+/.gitignore
+/CHANGELOG.md
+/LICENSE
+/Makefile
+/README.md
