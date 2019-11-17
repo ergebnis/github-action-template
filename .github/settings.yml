@@ -45,4 +45,4 @@ repository:
   has_projects: false
   has_wiki: false
   name: github-action-template
-  private: true
+  private: false
