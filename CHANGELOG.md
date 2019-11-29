@@ -6,4 +6,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-For a full diff see [`34c52fe...master`](https://github.com/localheinz/github-action-template/compare/34c52fe...master).
+For a full diff see [`34c52fe...master`](https://github.com/ergebnis/github-action-template/compare/34c52fe...master).

@@ -1,7 +1,7 @@
 # github-action-template
 
-[![Continuous Integration](https://github.com/localheinz/github-action-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/localheinz/github-action-template/actions)
-[![Continuous Deployment](https://github.com/localheinz/github-action-template/workflows/Continuous%20Deployment/badge.svg)](https://github.com/localheinz/github-action-template/actions)
+[![Continuous Integration](https://github.com/ergebnis/github-action-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/ergebnis/github-action-template/actions)
+[![Continuous Deployment](https://github.com/ergebnis/github-action-template/workflows/Continuous%20Deployment/badge.svg)](https://github.com/ergebnis/github-action-template/actions)
 
 ## What does this action do?
 
@@ -27,15 +27,15 @@ name: "Continuous Integration"
 jobs:
   github-action-template:
     name: github-action-template
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
 
       - name: "Run action"
-        uses: docker://localheinz/github-action-template:latest
+        uses: docker://ergebnis/github-action-template:latest
 ```
 
 ### Docker image
@@ -45,12 +45,12 @@ As Docker images are automatically built and pushed on a merge to `master` or wh
 :bulb: The Docker image can also be executed directly by running
 
 ```
-$ docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app localheinz/github-action-template:latest
+$ docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app ergebnis/github-action-template:latest
 ```
 
 For more information, see the [Docker Docs: Docker run reference](https://docs.docker.com/engine/reference/run/).
 
-Instead of using the latest pre-built Docker image, you can also specify a Docker image tag (which corresponds to the tags [released on GitHub](https://github.com/localheinz/github-action-template/releases)):
+Instead of using the latest pre-built Docker image, you can also specify a Docker image tag (which corresponds to the tags [released on GitHub](https://github.com/ergebnis/github-action-template/releases)):
 
 ```diff
  on:
@@ -66,16 +66,16 @@ Instead of using the latest pre-built Docker image, you can also specify a Docke
  jobs:
    github-action-template:
      name: github-action-template
-    
+
      runs-on: ubuntu-latest
-    
+
      steps:
        - name: "Checkout"
          uses: actions/checkout@master
 
        - name: "Run action"
--        uses: docker://localheinz/github-action-template:latest
-+        uses: docker://localheinz/github-action-template:1.2.3
+-        uses: docker://ergebnis/github-action-template:latest
++        uses: docker://ergebnis/github-action-template:1.2.3
 ```
 
 ## Changelog

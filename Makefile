@@ -1,6 +1,6 @@
 .PHONY: docker help it
 
-DOCKER_IMAGE:=localheinz/github-action-template
+DOCKER_IMAGE:=ergebnis/github-action-template
 
 it: docker ## Runs the docker target
 
