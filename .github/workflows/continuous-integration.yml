@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v1.0.0
+        uses: actions/checkout@v1
 
       - name: "Build Docker image"
         run: $(which docker) build --tag ${DOCKER_IMAGE}:latest .
